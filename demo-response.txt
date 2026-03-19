@@ -1,0 +1,23 @@
+A **Metal–Organic Framework (MOF)** is a class of crystalline materials made by linking **metal ions or metal clusters** with **organic molecules called ligands or linkers**.
+
+Think of it as a **3D scaffold**:
+
+* the **metal nodes** act like joints
+* the **organic linkers** act like bridges
+* together they form a **highly porous network**
+
+What makes MOFs important is that they often have:
+
+* **very large internal surface area**
+* **tunable pore size and chemistry**
+* **ordered, repeatable structures**
+
+Because of that, MOFs are widely studied for:
+
+* **gas storage** such as hydrogen or methane
+* **carbon dioxide capture**
+* **gas separation**
+* **catalysis**
+* **drug delivery**
+* **sensing**
+* **water purification**

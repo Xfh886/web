@@ -1,12 +1,62 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
   <title>pzm-mof-chat</title>
 </head>
-<body style="font-family: system-ui; padding: 24px;">
-  <h1>pzm-mof-chat</h1>
-  <p>It works ✅</p>
+
+<body>
+  <main class="container">
+    <section class="card">
+      <header class="header">
+        <h1 class="title">API Key Login</h1>
+        <p class="subtitle">
+          Model API key is required. CCDC API key is optional.
+        </p>
+      </header>
+
+      <label class="field">
+        <span class="label">Model API Key</span>
+        <div class="input-row">
+          <input id="modelKey" type="password" placeholder="Enter your model API key" />
+          <button class="inline-btn" type="button" id="toggleModelKey">Show</button>
+        </div>
+        <small class="error" id="modelKeyErr"></small>
+      </label>
+
+      <label class="field">
+        <span class="label">CCDC API Key <span class="optional">(Optional)</span></span>
+        <div class="input-row">
+          <input id="ccdcKey" type="password" placeholder="Enter your CCDC API key" />
+          <span class="badge is-disabled" id="ccdcStatus">CCDC Disabled</span>
+        </div>
+        <small class="subhint">If you do not have a CCDC key, you can leave it blank.</small>
+      </label>
+
+      <div class="row">
+        <label class="checkbox">
+          <input id="saveSession" type="checkbox" checked />
+          <span>Save for this session only (recommended)</span>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="clearButton" class="button" type="button">Clear</button>
+        <button id="continueButton" class="button primary" type="button" disabled>Continue</button>
+      </div>
+
+      <div id="notice" class="notice" role="status" aria-live="polite"></div>
+
+      <p class="fineprint">
+        Keys are stored locally in your browser. Do not use on shared machines.
+      </p>
+    </section>
+  </main>
+
+  <script src="js/login.js"></script>
 </body>
+
 </html>
